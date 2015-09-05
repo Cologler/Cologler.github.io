@@ -1,2 +1,0 @@
-# Cologler.github.io
-blog
