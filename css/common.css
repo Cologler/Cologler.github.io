@@ -1,0 +1,27 @@
+html {
+  background: #F2F2F2;
+}
+
+#forkme_banner {
+  display: block;
+  position: fixed;
+  top:0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: white;
+  background: url('../images/logos/github.png') #0090ff no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.st-search-submit-button {
+  padding: 7px 10px 7px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background: white;
+  color: #444;
+  
+}

@@ -4,41 +4,52 @@
 <html>
   <head>
     <meta name="viewport"content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
     <link rel="stylesheet" type="text/css" href="/css/page.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/highlight.js/8.8.0/styles/default.min.css" />
     <script src="//cdn.jsdelivr.net/highlight.js/8.8.0/highlight.min.js" />
     <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/common.js"></script>
   </head>
   
   <body>
     <div>
-      <h1>{{ page.title }}</h1>
-      <h2>{{ page.sub_title }}</h2>
+      <header>
+        <a id="forkme_banner"
+           href="https://github.com/Cologler">View on GitHub</a>
+        <h1>{{ page.title }}</h1>
+        <h2>{{ page.sub_title }}</h2>
+      <div class="st-search-box">
+        <input class="st-default-search-input"
+               type="text"
+               placeholder="enter & search"></input>
+      </div>
+      </header>
     </div>
   
-    <div>
-      {{ content }}
+    <div id="main-content">
+      <div>
+        {{ content }}
+      </div>
+      
+      <!-- disqus start -->
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = url;        
+          this.page.identifier = window.location.pathname;
+        };
+  
+      (function() {
+        var d = document, s = d.createElement('script');      
+        s.src = '//cologler.disqus.com/embed.js';      
+        s.setAttribute('data-timestamp', + new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      <!-- disqus end -->
     </div>
     
-    <!-- disqus start -->
-    <div id="disqus_thread"></div>
-    <script>
-      var disqus_config = function () {
-        var url = window.location.toString();
-        this.page.url = url;        
-        if (url.indexOf('http://') === 0) url = url.substr(7);
-        else if (url.indexOf('https://') === 0) url = url.substr(8);        
-        this.page.identifier = url;
-      };
-
-    (function() {
-      var d = document, s = d.createElement('script');      
-      s.src = '//cologler.disqus.com/embed.js';      
-      s.setAttribute('data-timestamp', + new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    <!-- disqus end -->
   </body>
 </html>
