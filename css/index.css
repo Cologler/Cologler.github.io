@@ -79,3 +79,16 @@ a:link { text-decoration:none; }
 a:visited { text-decoration:none; }
 a:hover { text-decoration:underline; }
 a:active { text-decoration:underline; }
+
+/* post-pagination */
+
+#post-pagination p,
+#post-pagination ul,
+#post-pagination li,
+#post-pagination a {
+  display: inline;
+}
+
+#post-pagination ul {
+  padding: 0;
+}
