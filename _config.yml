@@ -4,7 +4,7 @@ author:
   name: Cologler
 
 # To enable pagination for your blog, add a line to the _config.yml file that specifies how many items should be displayed per page:
-paginate: 1
+paginate: 5
 paginate_path: "page:num"
 
 # Conversion

@@ -9,18 +9,23 @@ layout: framework
   <script>hljs.initHighlightingOnLoad();</script>
 
   <header>
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.sub_title }}</h2>
-  <div class="st-search-box">
-    <input class="st-default-search-input"
-            type="text"
-            placeholder="enter & search"></input>
-  </div>
+    <div class="st-search-box">
+      <input class="st-default-search-input"
+              type="text"
+              placeholder="enter & search"></input>
+    </div>
+    {% if page.en-url %}
+    <div>
+      <span>此文可能不是最新的，若要查看最新，请点击</span>
+      <a href="{{ page.en-url }}">这里</a>
+    </div>
+    {% endif %}
   </header>
 </div>
 
 <div id="main-content">
-  <div>
+  <div class="md-content">
+    <link rel="stylesheet" type="text/css" href="/css/markdown.css" />
     {{ content }}
   </div>
   

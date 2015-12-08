@@ -1,0 +1,176 @@
+.md-content pre, .md-content  code {
+  font-size: 1em;
+  font-family: Consolas, Inconsolata, Courier, monospace;
+}
+
+.md-content code {
+  margin: 0 0.15em;
+  padding: 0 0.3em;
+  white-space: pre-wrap;
+  border: 1px solid #EAEAEA;
+  background-color: #F8F8F8;
+  border-radius: 3px;
+  display: inline;
+}
+
+.md-content pre {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+.md-content pre code {
+  white-space: pre;
+  overflow: auto;
+  border-radius: 0px;
+  border: 0px solid #CCC;
+  padding: 0.5em 0.7em;
+  display: block !important;
+}
+
+.md-content p {
+  margin: 1.2em 0 !important;
+}
+
+.md-content table,
+.md-content pre,
+.md-content dl,
+.md-content blockquote,
+.md-content q,
+.md-content ul,
+.md-content ol {
+  margin: 1.2em 0;
+}
+
+.md-content ul,
+.md-content ol {
+  padding-left: 2em;
+}
+
+.md-content li {
+  margin: 0.5em 0;
+}
+
+.md-content li p {
+  margin: 0.5em 0 !important;
+}
+
+.md-content ul ul,
+.md-content ul ol,
+.md-content ol ul,
+.md-content ol ol {
+  margin: 0;
+  padding-left: 1em;
+}
+
+.md-content dl {
+  padding: 0;
+}
+
+.md-content dl dt {
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.md-content dl dd {
+  margin: 0 0 1em;
+  padding: 0 1em;
+}
+
+.md-content blockquote,
+.md-content q {
+  border-left: 5px solid #DDD;
+  height: 3em;
+  padding: 0.1em 1.2em;
+  color: #777;
+  quotes: none;
+  background-color: #F8F8F8;
+}
+
+.md-content blockquote::before,
+.md-content blockquote::after,
+.md-content q::before,
+.md-content q::after {
+  content: none;
+}
+
+.md-content h1,
+.md-content h2,
+.md-content h3,
+.md-content h4,
+.md-content h5,
+.md-content h6 {
+  margin: 0em 0 0.6em;
+  padding: 0;
+  font-weight: bold;
+}
+
+.md-content h1 {
+  font-size: 3em;
+  padding: 0em 0em 0.5em 0em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #888;
+}
+
+.md-content h2 {
+  font-size: 2.2em;
+  padding: 0em 0em 0.4em 0em;
+  margin-top: 1em;
+  border-bottom: 1px solid #eee;
+}
+
+.md-content h3 {
+  font-size: 1.8em;
+}
+
+.md-content h4 {
+  font-size: 1.3em;
+}
+
+.md-content h5 {
+  font-size: 1em;
+}
+
+.md-content h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.md-content table {
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+  font: inherit;
+  border: 0;
+}
+
+.md-content tbody {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.md-content table tr {
+  border: 0;
+  border-top: 1px solid #CCC;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.md-content table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+
+.md-content table tr th, table tr td {
+  font-size: 1em;
+  border: 1px solid #CCC;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+
+.md-content table tr th {
+ font-weight: bold;
+  background-color: #F0F0F0;
+}
