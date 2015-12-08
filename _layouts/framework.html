@@ -6,6 +6,18 @@
     <meta name="viewport"content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="/css/common.css" />
     <script src="/js/common.js"></script>
+    
+    <!-- swiftype -->
+    {% if page %}
+      {% if page.title %}
+      <meta class="swiftype" name="title" data-type="string" content="{{ page.title }}" />
+      {% endif %}
+      {% if page.tags %}
+        {% for tag in page.tags %}
+          <meta class="swiftype" name="title" data-type="string" content="{{ tag }}" />
+        {% endfor %}
+      {% endif %}
+    {% endif %}
   </head>
   <body>
     <div>
