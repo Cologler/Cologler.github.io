@@ -27,27 +27,32 @@ body {
   background-color: #2A2A2A;
   list-style: none;
 }
-.top-bar-item-container {
-  margin: 0 auto;
-  max-width: 60em;
-}
-.top-bar-item {
-  display: inline-block;
-  padding: 0.4em 0.8em;
-  margin: 0;
-  color: white;  
-  text-align: center;
-  text-shadow: #0090ff;
-  
-  border: 1px solid rgb(220, 220, 220);
-  border-top: 0;
-  border-bottom: 0;
-}
-.top-bar-item p {
-  margin: 0;
-  font-size: 1.7em;
-}
 .top-bar a:link { text-decoration:none; }
 .top-bar a:visited { text-decoration:none; }
 .top-bar a:hover { text-decoration:none; }
 .top-bar a:active { text-decoration:none; }
+
+.nav-bar {
+  margin: 0 auto;
+  max-width: 60em;
+  list-style: none;
+}
+.nav-bar li {
+  display: inline-block;
+}
+.nav-bar-item {
+  display: inline-block;
+  padding: 0.9em;
+  margin: 0;
+  color: white;  
+  text-align: center;
+  text-shadow: #0090ff;
+}
+.nav-bar-item p {
+  margin: 0;
+  font-size: 1em;
+  color: rgb(180, 180, 180);
+}
+.nav-bar-item #nav-bar-self {
+  color: white;
+}
