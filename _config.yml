@@ -7,6 +7,13 @@ author:
 paginate: 5
 paginate_path: "page:num"
 
+# set link.
+permalink: /:title.html
+
 # Conversion
 kramdown:
   input: GFM
+
+gems: [jekyll-paginate]
+
+excerpt_separator: "<!-- more -->"

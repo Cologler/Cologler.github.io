@@ -1,12 +1,6 @@
 header {
   width: 100%;
-  background: #FF6666;
-}
-
-.st-search-box {
-  right: 31em;
-  top: 0.47em;
-  position: absolute;
+  background: #A349A4;
 }
 
 header h1 {
@@ -15,6 +9,8 @@ header h1 {
   color: white;
   font-size: 3.8em;
   text-shadow: 1px 1px 10px rgba(0,0,0,0.7);
+  font-family: 'Playfair Display';
+  font-weight: 300;
 }
 
 header h2 {
@@ -46,12 +42,17 @@ div {
 
 .post-date {
   margin-right: 0;
+  margin-top: -1.5em;
   z-index: 5;
-  margin-top: -1.2em;
   background: orangered;
-  padding: 0.1em;
+  padding: 0.01em;
   width: 11em;
   box-shadow: 0 0 14px rgba(0,0,0,0.7);
+  float: right;
+}
+
+.post-content {
+  
 }
 
 .post-date p {
