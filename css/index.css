@@ -68,22 +68,14 @@ div {
 .post-title a {
   font-size: 1.5em;
   padding: 0.3em 0 0.3em 0.3em;
+  color: black;
 }
 
 .post-sub-title p {
-  
 }
 
 .post-excerpt p {
-  
 }
-
-/* link */
-
-a:link { text-decoration:none; }
-a:visited { text-decoration:none; }
-a:hover { text-decoration:underline; }
-a:active { text-decoration:underline; }
 
 /* post-pagination */
 
