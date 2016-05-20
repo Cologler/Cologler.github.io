@@ -1,6 +1,7 @@
 header {
   width: 100%;
-  background: #A349A4;
+  background: #DB4437;
+  box-shadow: 0 0 14px rgba(0,0,0,0.7);
 }
 
 header h1 {
@@ -42,13 +43,16 @@ div {
 
 .post-date {
   margin-right: 0;
-  margin-top: -1.5em;
+  margin-top: -1em;
   z-index: 5;
   background: orangered;
   padding: 0.01em;
-  width: 11em;
+  width: 9em;
   box-shadow: 0 0 14px rgba(0,0,0,0.7);
   float: right;
+}
+.post-date p {
+  margin: 0.4em;
 }
 
 .post-content {
