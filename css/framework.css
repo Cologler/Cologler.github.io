@@ -2,11 +2,13 @@ html {
   background: #F2F2F2;
   font-family: 'Noticia Text', '微软雅黑 light', '微软雅黑';
   font-weight: 300;
+  height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 #forkme_banner {
@@ -18,7 +20,7 @@ body {
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: white;
-  background: url('/assets/image/logo/github.png') #0090ff no-repeat 95% 50%;
+  background: url('/assets/images/logos/github.png') #0090ff no-repeat 95% 50%;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
@@ -72,3 +74,10 @@ a:link { text-decoration:none; }
 a:visited { text-decoration:none; }
 a:hover { text-decoration:none; }
 a:active { text-decoration:none; }
+
+.background-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

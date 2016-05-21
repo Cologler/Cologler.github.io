@@ -21,6 +21,13 @@ header h2 {
   font-size: 1.6em;
 }
 
+#main-body {
+  height: 100%;
+  /* background-image: url('/assets/images/bgs/m.jpg'); 
+  background-position: center top;
+  background-repeat: no-repeat; */
+}
+
 #main-content {
   width: 100%;
   max-width: 975px;

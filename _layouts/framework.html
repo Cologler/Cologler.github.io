@@ -5,7 +5,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="/assets/image/logo/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/images/logos/favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css?family=Playfair+Display%3A400%2C400italic%2C700%2C700italic%7CNoticia+Text%3A400%2C400italic%2C700%2C700italic%7CMontserrat%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="/css/framework.css" />
@@ -52,8 +52,29 @@
       <a id="forkme_banner"
         href="https://github.com/Cologler">View on GitHub</a>
     </div>
-    <div>
+    
+    <div style="height: 100%;">
       {{ content }}
-    </div>    
+    </div>
+    
+    {% if page.background %}
+    <div id='background-div' class='background-div'>
+      <img id='background-img' class='background-img' src="/assets/images/bgs/m.jpg">
+    </div>
+    
+    <script src="{{ page.background }}"></script>
+    <script>
+      (function () {
+        var image = document.getElementById('background-img');
+        image.onload = function() {
+          var engine = new RainyDay({
+            image: this,
+            parentElement: document.getElementById('background-div')
+          });
+          engine.rain([ [0, 2, 200], [3, 3, 1] ], 100);
+        };
+      })();
+    </script>
+    {% endif %}
   </body>  
 </html>
