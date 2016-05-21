@@ -10,5 +10,7 @@ with open(os.path.join(folder, name), 'w', encoding='utf8', newline='\r\n') as w
     writer.write('---\n')
     writer.write('categories: \n')
     writer.write('title: \n')
-    writer.write('layout: \n')
+    writer.write('layout: page\n')
+    writer.write('tags: \n')
+    writer.write('background: \n')
     writer.write('---\n')
