@@ -59,7 +59,7 @@
     
     {% if page.background %}
     <div id='background-div' class='background-div'>
-      <img id='background-img' class='background-img' src="{{ page.background }}">
+      <img id='background-img' class='background-img' src="">
     </div>
     
     <script src="/assets/js/rainyday.min.js"></script>
@@ -73,6 +73,8 @@
           });
           engine.rain([ [0, 2, 200], [3, 3, 1] ], 100);
         };
+        image.crossOrigin = 'anonymous';
+        image.src = '{{ page.background }}';
       })();
     </script>
     {% endif %}
