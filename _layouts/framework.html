@@ -59,10 +59,10 @@
     
     {% if page.background %}
     <div id='background-div' class='background-div'>
-      <img id='background-img' class='background-img' src="/assets/images/bgs/m.jpg">
+      <img id='background-img' class='background-img' src="{{ page.background }}">
     </div>
     
-    <script src="{{ page.background }}"></script>
+    <script src="/assets/js/rainyday.min.js"></script>
     <script>
       (function () {
         var image = document.getElementById('background-img');
