@@ -45,9 +45,9 @@ background: https://i.imgur.com/CFIgMxN.jpg
       {% if paginator.previous_page %}
         <p class="previous">
           {% if paginator.previous_page == 1 %}
-            <a href="/">上一页</a>
+            <a href="/">last page</a>
           {% else %}
-            <a href="{{ paginator.previous_page_path }}">上一页</a>
+            <a href="{{ paginator.previous_page_path }}">last page</a>
           {% endif %}
         </p>
       {% endif %}
@@ -74,7 +74,7 @@ background: https://i.imgur.com/CFIgMxN.jpg
     
       {% if paginator.next_page %}
         <p class="next">
-          <a href="{{ paginator.next_page_path }}">下一页</a>
+          <a href="{{ paginator.next_page_path }}">next page</a>
         </p>
       {% endif %}
     </div>
