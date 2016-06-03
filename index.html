@@ -31,7 +31,7 @@ background: https://i.imgur.com/CFIgMxN.jpg
           <div class="post-excerpt">
             <p>{{ p.excerpt }}</p>
           </div>
-          <p>tags: {% for tag in p.tags %}<a href="../?tag={{ tag }}">{{ tag }}</a>{% endfor %}</p>
+          <p class="post-tags">tags: {% for tag in p.tags %}<a href="../?tag={{ tag }}">{{ tag }}</a>{% endfor %}</p>
         </div>
       </div>      
       {% endfor %}
