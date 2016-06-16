@@ -3,14 +3,23 @@
   font-family: Consolas, Inconsolata, Courier, monospace;
 }
 
-.md-content code {
+.md-content pre code {
   margin: 0 0.15em;
   padding: 0 0.3em;
   white-space: pre-wrap;
-  border: 1px solid #EAEAEA;
-  background-color: #F8F8F8;
-  border-radius: 3px;
+  background-color: #181818;
   display: inline;
+}
+
+.md-content code.highlighter-rouge {
+  border-radius: 9px;
+  background-color: white;
+  padding: 0 5px;
+  color: #186C26;
+}
+
+.md-content code {
+  border: 1px solid #CCC;
 }
 
 .md-content pre {

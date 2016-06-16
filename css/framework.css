@@ -62,12 +62,6 @@ body {
   color: white;
 }
 
-.st-search-box {
-  margin-top: -2.6em;
-  margin-right: 13em;
-  float: right;
-}
-
 /* link */
 
 a:link { text-decoration:none; }

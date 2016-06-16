@@ -12,18 +12,6 @@
     <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css?family=Playfair+Display%3A400%2C400italic%2C700%2C700italic%7CNoticia+Text%3A400%2C400italic%2C700%2C700italic%7CMontserrat%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="/css/framework.css" />
     <script src="/js/common.js"></script>
-    
-    <!-- swiftype -->
-    {% if page %}
-      {% if page.title %}
-      <meta class="swiftype" name="title" data-type="string" content="{{ page.title }}" />
-      {% endif %}
-      {% if page.tags %}
-        {% for tag in page.tags %}
-          <meta class="swiftype" name="title" data-type="string" content="{{ tag }}" />
-        {% endfor %}
-      {% endif %}
-    {% endif %}
   </head>
   
   <body>
@@ -47,12 +35,6 @@
               </a>
             </li>
           </ul>
-        </div>
-        
-        <div class="st-search-box">
-          <input class="st-default-search-input"
-                type="text"
-                placeholder="enter & search"></input>
         </div>
       </div>
       
